@@ -1,6 +1,6 @@
-SQL-XSS-LFI Vulnerability Scanner
+SQL-XSS-LFI Vulnerability Scanner 
 
-Description
+Description:
 The SQL-XSS-LFI Vulnerability Scanner is an automated security tool designed to identify potential vulnerabilities in web applications. It leverages advanced dorking techniques to discover URLs that may be susceptible to:
 
 SQL Injection (SQLi)
@@ -13,23 +13,28 @@ This tool uses Google, Bing, and Yandex search engines to find potential targets
 
 
 
+Features:
+Automated Dork Scanning: Searches for vulnerable URLs using search engines.
+
+SQL Injection Detection: Identifies possible SQLi vulnerabilities.
+
+XSS Testing: Checks for cross-site scripting flaws.
+
+LFI Exploitation Detection: Scans for local file inclusion vulnerabilities.
+
+TOR Integration: Uses the TOR network to anonymize requests.
+
+Multi-Threaded Execution: Speeds up scanning by testing multiple URLs simultaneously.
+
 ---
+Installation:
 
-## Features
-- **Automated Dork Scanning**: Searches for vulnerable URLs using search engines.
-- **SQL Injection Detection**: Identifies possible SQLi vulnerabilities.
-- **XSS Testing**: Checks for cross-site scripting flaws.
-- **LFI Exploitation Detection**: Scans for local file inclusion vulnerabilities.
-- **TOR Integration**: Uses the TOR network to anonymize requests.
-- **Multi-Threaded Execution**: Speeds up scanning by testing multiple URLs simultaneously.
+Prerequisites:
 
----
+Ensure you have Python 3.x installed on your system. Additionally, you need the TOR service to be running before executing the script.
 
-## Installation
-### Prerequisites
-Ensure you have **Python 3.x** installed on your system. Additionally, you need the TOR service to be running before executing the script.
+Required Libraries
 
-### Required Libraries
 Install the necessary Python libraries by running the following command:
 
 ```bash
