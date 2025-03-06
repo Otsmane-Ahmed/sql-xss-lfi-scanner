@@ -1,13 +1,17 @@
-# SQL-XSS-LFI Vulnerability Scanner
+SQL-XSS-LFI Vulnerability Scanner
 
-## Description
-The **SQL-XSS-LFI Vulnerability Scanner** is an automated security tool designed to identify potential vulnerabilities in web applications. It leverages advanced dorking techniques to discover URLs that may be susceptible to:
+Description
+The SQL-XSS-LFI Vulnerability Scanner is an automated security tool designed to identify potential vulnerabilities in web applications. It leverages advanced dorking techniques to discover URLs that may be susceptible to:
 
-- **SQL Injection (SQLi)**
-- **Cross-Site Scripting (XSS)**
-- **Local File Inclusion (LFI)**
+SQL Injection (SQLi)
+
+Cross-Site Scripting (XSS)
+
+Local File Inclusion (LFI)
 
 This tool uses Google, Bing, and Yandex search engines to find potential targets and then systematically tests them for security flaws.
+
+
 
 ---
 
