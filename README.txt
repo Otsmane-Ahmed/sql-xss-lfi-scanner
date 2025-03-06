@@ -1,0 +1,1 @@
+start tor service before launching the python script
