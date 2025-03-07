@@ -73,4 +73,4 @@ Found 35 relevant URLs. Testing for vulnerabilities...
 ---
 
  **Developed with  by Otsmane Ahmed**  
-  Licensed under MIT  
+
