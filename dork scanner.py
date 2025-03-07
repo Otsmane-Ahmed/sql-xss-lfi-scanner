@@ -47,7 +47,7 @@ def get_dork_results(dork):
     
     all_results = set(google_results + bing_results + yandex_results)
     
-    # Filter only URLs containing parameters like ?id=
+    # Filter only urls containing parameters like ?id=, you can change it if u want to like according to your dorking list 
     filtered_results = [url for url in all_results if "?id=" in url and not any(domain in url for domain in ["stackoverflow.com", "php.net", "github.com"])]
     return filtered_results
 
@@ -58,7 +58,7 @@ def test_vulnerabilities(url):
     
     vulnerabilities = []
     
-    # Test SQL Injection
+    # test sqli
     for payload, description in sql_payloads.items():
         test_url = url + payload
         try:
@@ -69,7 +69,7 @@ def test_vulnerabilities(url):
         except requests.exceptions.RequestException:
             continue
     
-    # Test XSS
+    # test xssi
     for payload, description in xss_payloads.items():
         test_url = url + payload
         try:
@@ -80,7 +80,7 @@ def test_vulnerabilities(url):
         except requests.exceptions.RequestException:
             continue
     
-    # Test LFI
+    # test lfi
     for payload, description in lfi_payloads.items():
         test_url = url + payload
         try:
